@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74725ea2-5067-409f-afb6-e0e92261c8d1" name="更改" comment="项目目录结构" />
+    <list default="true" id="74725ea2-5067-409f-afb6-e0e92261c8d1" name="更改" comment="项目目录结构">
+      <change afterPath="$PROJECT_DIR$/cmd/server/main.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,12 +40,12 @@
     &quot;state&quot;: &quot;OPEN&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/MJ-9527/GoMind.git&quot;,
-    &quot;accountId&quot;: &quot;ffb33d70-a3f0-4a6a-a727-316e37dd4f49&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:MJ-9527/GoMind.git",
+    "accountId": "ffb33d70-a3f0-4a6a-a727-316e37dd4f49"
   }
-}</component>
+}]]></component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
