@@ -1,0 +1,12 @@
+# 服务器基础配置
+server:
+  host: "0.0.0.0"
+  port: 8080
+  mode: "dev"               #dev/test/prod 区分环境
+
+# 日志配置
+log:
+  level: "info"             #debug/info/warn/error
+  path: "./logs/agent.log"  #日志存储路径
+  max_size: 100             # 单个日志文件最大大小（MB）
+  max_backup: 7             # 保留日志文件数
