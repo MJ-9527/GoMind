@@ -1,0 +1,10 @@
+POST http://localhost:8080/chat
+User-Agent: IntelliJ HTTP Client/GoLand 2025.2.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-03-19T185517.404.txt
+
+###
+

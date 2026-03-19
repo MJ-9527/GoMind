@@ -10,3 +10,9 @@ log:
   path: "./logs/agent.log"  #日志存储路径
   max_size: 100             # 单个日志文件最大大小（MB）
   max_backup: 7             # 保留日志文件数
+
+# AI配置
+ai:
+  model: "qwen-turbo"
+  timeout: 30
+  max_retries: 3

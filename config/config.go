@@ -7,6 +7,7 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/joho/godotenv"
 	"gopkg.in/yaml.v3"
 )
 
@@ -24,6 +25,12 @@ type AppConfig struct {
 		MaxSize    int    `yaml:"max_size"`    //单个日志文件最大大小(MB)
 		MaxBackups int    `yaml:"max_backups"` //单个文件保留数量
 	} `yaml:"log"`
+
+	AI struct {
+		Model      string `yaml:"model"`       // 大模型名称（gpt-3.5-turbo/qwen-turbo）
+		Timeout    int    `yaml:"timeout"`     //请求超时时间（秒）
+		MaxRetries int    `yaml:"max_retries"` //最大重试次数
+	} `yaml:"ai"`
 }
 
 // GlobalConfig 全局配置实例
@@ -54,6 +61,12 @@ func LoadConfig(configPath string) error {
 	logDir := filepath.Dir(GlobalConfig.Log.Path)
 	if err := os.MkdirAll(logDir, 0755); err != nil {
 		return fmt.Errorf("创建日志目录失败: %w", err)
+	}
+
+	//5. 优先加载.env文件，生产环境可通过系统环境变量覆盖
+	if err := godotenv.Load(); err != nil {
+		// 非致命错误，仅打印警告（生产环境可能不使用.env文件）
+		fmt.Printf("加载.env文件警告: %v\n", err)
 	}
 
 	return nil

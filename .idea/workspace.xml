@@ -4,15 +4,22 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74725ea2-5067-409f-afb6-e0e92261c8d1" name="更改" comment="项目目录结构">
-      <change afterPath="$PROJECT_DIR$/config/config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/logger/logger.go" afterDir="false" />
+    <list default="true" id="74725ea2-5067-409f-afb6-e0e92261c8d1" name="更改" comment="day1-3目录搭建、集成配置管理+标准化日志">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/handler/agent.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/handler/health.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/handler/response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/middleware/log.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/router/router.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/ai/client.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/server/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/server/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cofig.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cofig.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/agent.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/agent.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/logger/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/logger/logger.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +82,7 @@
     "Go 构建.go build GoMind/cmd/server.executor": "Run",
     "Go 构建.go build github.com/MJ-9527/GoMind/cmd/server.executor": "Run",
     "Go 构建.go build gitnub.com/MJ-9527/GoMind/cmd/server.executor": "Run",
+    "HTTP 请求.generated-requests | #1.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -94,7 +102,20 @@
     "run.configurations.included.in.services": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Go 构建.go build github.com/MJ-9527/GoMind/cmd/server">
+  <component name="RunDashboard">
+    <option name="configurationStatuses">
+      <map>
+        <entry key="HttpClient.HttpRequestRunConfigurationType">
+          <value>
+            <map>
+              <entry key="generated-requests | #1" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP 请求.generated-requests | #1">
     <configuration name="go build GoMind/cmd/server" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="GoMind" />
       <working_directory value="$PROJECT_DIR$" />
@@ -122,8 +143,12 @@
       <filePath value="$PROJECT_DIR$/cmd/server/main.go" />
       <method v="2" />
     </configuration>
+    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#1" runType="运行单个请求">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP 请求.generated-requests | #1" />
         <item itemvalue="Go 构建.go build github.com/MJ-9527/GoMind/cmd/server" />
         <item itemvalue="Go 构建.go build gitnub.com/MJ-9527/GoMind/cmd/server" />
         <item itemvalue="Go 构建.go build GoMind/cmd/server" />
@@ -201,7 +226,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="项目目录结构" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目目录结构" />
+    <MESSAGE value="day1-3目录搭建、集成配置管理+标准化日志" />
+    <option name="LAST_COMMIT_MESSAGE" value="day1-3目录搭建、集成配置管理+标准化日志" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
