@@ -1,0 +1,24 @@
+# Go项目通用忽略规则（大厂标配）
+# 1. 编译后的二进制文件
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+# 2. Go模块缓存
+go.sum
+vendor/
+# 3. 敏感信息/配置文件
+.env
+.env.local
+.env.*
+# 4. 日志文件
+logs/
+*.log
+# 5. IDE配置文件（Goland/VS Code）
+.idea/
+.vscode/
+*.swp
+*.swo
+# 6. 临时文件
+tmp/
