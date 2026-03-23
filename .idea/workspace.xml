@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74725ea2-5067-409f-afb6-e0e92261c8d1" name="更改" comment="day4-5:集成Gin框架、标准化HTTP接口、集成AI能力、实现Agent对话接口">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+    <list default="true" id="74725ea2-5067-409f-afb6-e0e92261c8d1" name="更改" comment="移除敏感文件.env，配置.gitignore">
+      <change afterPath="$PROJECT_DIR$/pkg/redis/redis.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/agent.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/agent.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +222,8 @@
     <MESSAGE value="项目目录结构" />
     <MESSAGE value="day1-3目录搭建、集成配置管理+标准化日志" />
     <MESSAGE value="day4-5:集成Gin框架、标准化HTTP接口、集成AI能力、实现Agent对话接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="day4-5:集成Gin框架、标准化HTTP接口、集成AI能力、实现Agent对话接口" />
+    <MESSAGE value="移除敏感文件.env，配置.gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="移除敏感文件.env，配置.gitignore" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

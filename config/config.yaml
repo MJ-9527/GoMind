@@ -9,10 +9,19 @@ log:
   level: "info"             #debug/info/warn/error
   path: "./logs/agent.log"  #日志存储路径
   max_size: 100             # 单个日志文件最大大小（MB）
-  max_backup: 7             # 保留日志文件数
+  max_backups: 7             # 保留日志文件数
 
 # AI配置
 ai:
   model: "qwen-turbo"
   timeout: 30
   max_retries: 3
+
+# redis数据库配置
+redis:
+  addr: "localhost:6379"
+  password: ""
+  db: 0
+
+rate_limit:
+  max_requests: 10 #每秒最多10次请求

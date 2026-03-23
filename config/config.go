@@ -31,6 +31,16 @@ type AppConfig struct {
 		Timeout    int    `yaml:"timeout"`     //请求超时时间（秒）
 		MaxRetries int    `yaml:"max_retries"` //最大重试次数
 	} `yaml:"ai"`
+
+	Redis struct {
+		Addr     string `yaml:"addr"`
+		Password string `yaml:"password"`
+		DB       int    `yaml:"db"`
+	} `yaml:"redis"`
+
+	RateLimit struct {
+		MaxRequests int `yaml:"max_requests"`
+	} `yaml:"rate_limit"`
 }
 
 // GlobalConfig 全局配置实例
