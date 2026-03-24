@@ -1,24 +1,73 @@
-# Go项目通用忽略规则（大厂标配）
-# 1. 编译后的二进制文件
+```
+# Go-specific ignores
+*.mod
+*.sum
+vendor/
+
+# Compiled and build artifacts
+*.o
+*.obj
+*.out
 *.exe
-*.exe~
 *.dll
 *.so
-*.dylib
-# 2. Go模块缓存
-go.sum
-vendor/
-# 3. 敏感信息/配置文件
+*.a
+
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+target/
+.gradle/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Environment
 .env
 .env.local
 .env.*
-# 4. 日志文件
-logs/
-*.log
-# 5. IDE配置文件（Goland/VS Code）
-.idea/
+
+# Editors
 .vscode/
-*.swp
-*.swo
-# 6. 临时文件
-tmp/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
+```
