@@ -12,6 +12,7 @@ import (
 	"github.com/MJ-9527/GoMind/config"
 	"github.com/MJ-9527/GoMind/pkg/ai"
 	"github.com/MJ-9527/GoMind/pkg/logger"
+	"github.com/MJ-9527/GoMind/pkg/redis"
 	"go.uber.org/zap"
 )
 
@@ -32,6 +33,11 @@ func main() {
 		os.Exit(1)
 	}
 	defer logger.Logger.Sync()
+
+	// ========== 初始化redis客户端 ==========
+	if err := redis.InitRedis(); err != nil {
+		logger.Fatal("初始化redis失败", zap.Error(err))
+	}
 
 	// ========== 初始化AI客户端 ==========
 	if err := ai.InitAIClient(); err != nil {

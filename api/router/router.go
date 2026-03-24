@@ -26,7 +26,7 @@ func InitRouter() *gin.Engine {
 	r.GET("/health", handler.HealthCheckHandler)
 
 	// 5. 业务接口分组（版本化管理，便于迭代）
-	v1 := r.Group("/api/v1")
+	v1 := r.Group("/api/v1", middleware.RateLimitMiddleware())
 	{
 		// ========= Agent 路由 =========
 		agent := v1.Group("/agent")
