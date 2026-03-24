@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74725ea2-5067-409f-afb6-e0e92261c8d1" name="更改" comment="redis配置">
-      <change afterPath="$PROJECT_DIR$/api/middleware/ratelimit.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/ai/session.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/router/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/server/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/server/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/agent.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/agent.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

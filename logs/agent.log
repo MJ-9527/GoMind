@@ -381,3 +381,54 @@
 2026-03-23T19:31:46.373+0800	INFO	handler/agent.go:37	接收Agent对话请求	{"session_id": "25", "user_input": "你好"}
 2026-03-23T19:31:46.817+0800	INFO	handler/agent.go:74	Agent对话接口响应成功	{"session_id": "25"}
 2026-03-23T19:31:46.818+0800	INFO	middleware/log.go:22	HTTP 请求日志	{"method": "POST", "path": "/api/v1/agent/chat", "status": 200, "latency": 0.4459321, "client_ip": "::1", "user_agent": "Apifox/1.0.0 (https://apifox.com)"}
+2026-03-24T19:25:08.508+0800	FATAL	server/main.go:39	初始化redis失败	{"error": "dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it."}
+2026-03-24T19:32:19.950+0800	FATAL	server/main.go:39	初始化redis失败	{"error": "dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it."}
+2026-03-24T19:50:55.108+0800	INFO	redis/redis.go:25	Redis 连接成功
+2026-03-24T19:50:55.116+0800	INFO	ai/client.go:49	AI客户端初始化成功	{"model": "qwen-turbo"}
+2026-03-24T19:50:55.116+0800	INFO	server/main.go:52	HTTP服务启动中	{"addr": "0.0.0.0:8080"}
+2026-03-24T19:51:07.093+0800	INFO	server/main.go:73	开始优雅关闭HTTP服务
+2026-03-24T19:51:07.093+0800	INFO	server/main.go:77	HTTP服务已成功关闭
+2026-03-24T19:51:08.988+0800	INFO	redis/redis.go:25	Redis 连接成功
+2026-03-24T19:51:08.995+0800	INFO	ai/client.go:49	AI客户端初始化成功	{"model": "qwen-turbo"}
+2026-03-24T19:51:08.995+0800	INFO	server/main.go:52	HTTP服务启动中	{"addr": "0.0.0.0:8080"}
+2026-03-24T19:52:07.422+0800	INFO	handler/agent.go:37	接收Agent对话请求	{"session_id": "25", "user_input": "我叫马骏"}
+2026-03-24T19:52:08.169+0800	INFO	handler/agent.go:74	Agent对话接口响应成功	{"session_id": "25"}
+2026-03-24T19:52:08.169+0800	INFO	middleware/log.go:22	HTTP 请求日志	{"method": "POST", "path": "/api/v1/agent/chat", "status": 200, "latency": 0.74746, "client_ip": "::1", "user_agent": "Apifox/1.0.0 (https://apifox.com)"}
+2026-03-24T19:52:22.881+0800	INFO	handler/agent.go:37	接收Agent对话请求	{"session_id": "25", "user_input": "现在你叫zzz"}
+2026-03-24T19:52:23.721+0800	INFO	handler/agent.go:74	Agent对话接口响应成功	{"session_id": "25"}
+2026-03-24T19:52:23.721+0800	INFO	middleware/log.go:22	HTTP 请求日志	{"method": "POST", "path": "/api/v1/agent/chat", "status": 200, "latency": 0.8398002, "client_ip": "::1", "user_agent": "Apifox/1.0.0 (https://apifox.com)"}
+2026-03-24T19:52:36.080+0800	INFO	handler/agent.go:37	接收Agent对话请求	{"session_id": "25", "user_input": "叫我的名字"}
+2026-03-24T19:52:36.498+0800	INFO	handler/agent.go:74	Agent对话接口响应成功	{"session_id": "25"}
+2026-03-24T19:52:36.498+0800	INFO	middleware/log.go:22	HTTP 请求日志	{"method": "POST", "path": "/api/v1/agent/chat", "status": 200, "latency": 0.4180488, "client_ip": "::1", "user_agent": "Apifox/1.0.0 (https://apifox.com)"}
+2026-03-24T19:52:44.424+0800	INFO	handler/agent.go:37	接收Agent对话请求	{"session_id": "25", "user_input": "我叫什么"}
+2026-03-24T19:52:44.786+0800	INFO	handler/agent.go:74	Agent对话接口响应成功	{"session_id": "25"}
+2026-03-24T19:52:44.786+0800	INFO	middleware/log.go:22	HTTP 请求日志	{"method": "POST", "path": "/api/v1/agent/chat", "status": 200, "latency": 0.3614901, "client_ip": "::1", "user_agent": "Apifox/1.0.0 (https://apifox.com)"}
+2026-03-24T19:54:16.149+0800	INFO	server/main.go:73	开始优雅关闭HTTP服务
+2026-03-24T19:54:16.149+0800	INFO	server/main.go:77	HTTP服务已成功关闭
+2026-03-24T19:54:19.842+0800	FATAL	server/main.go:39	初始化redis失败	{"error": "dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it."}
+2026-03-24T19:54:58.784+0800	INFO	redis/redis.go:25	Redis 连接成功
+2026-03-24T19:54:58.793+0800	INFO	ai/client.go:49	AI客户端初始化成功	{"model": "qwen-turbo"}
+2026-03-24T19:54:58.793+0800	INFO	server/main.go:52	HTTP服务启动中	{"addr": "0.0.0.0:8080"}
+2026-03-24T19:55:50.667+0800	INFO	handler/agent.go:37	接收Agent对话请求	{"session_id": "25", "user_input": "你现在叫zzz"}
+2026-03-24T19:55:51.464+0800	INFO	handler/agent.go:74	Agent对话接口响应成功	{"session_id": "25"}
+2026-03-24T19:55:51.464+0800	INFO	middleware/log.go:22	HTTP 请求日志	{"method": "POST", "path": "/api/v1/agent/chat", "status": 200, "latency": 0.7966942, "client_ip": "::1", "user_agent": "Apifox/1.0.0 (https://apifox.com)"}
+2026-03-24T19:56:06.442+0800	INFO	handler/agent.go:37	接收Agent对话请求	{"session_id": "25", "user_input": "你叫什么"}
+2026-03-24T19:56:06.735+0800	INFO	handler/agent.go:74	Agent对话接口响应成功	{"session_id": "25"}
+2026-03-24T19:56:06.735+0800	INFO	middleware/log.go:22	HTTP 请求日志	{"method": "POST", "path": "/api/v1/agent/chat", "status": 200, "latency": 0.2927748, "client_ip": "::1", "user_agent": "Apifox/1.0.0 (https://apifox.com)"}
+2026-03-24T19:56:16.808+0800	INFO	handler/agent.go:37	接收Agent对话请求	{"session_id": "25", "user_input": "我叫MJ"}
+2026-03-24T19:56:17.747+0800	INFO	handler/agent.go:74	Agent对话接口响应成功	{"session_id": "25"}
+2026-03-24T19:56:17.747+0800	INFO	middleware/log.go:22	HTTP 请求日志	{"method": "POST", "path": "/api/v1/agent/chat", "status": 200, "latency": 0.9384069, "client_ip": "::1", "user_agent": "Apifox/1.0.0 (https://apifox.com)"}
+2026-03-24T19:56:22.804+0800	INFO	handler/agent.go:37	接收Agent对话请求	{"session_id": "25", "user_input": "我叫什么"}
+2026-03-24T19:56:23.105+0800	INFO	handler/agent.go:74	Agent对话接口响应成功	{"session_id": "25"}
+2026-03-24T19:56:23.105+0800	INFO	middleware/log.go:22	HTTP 请求日志	{"method": "POST", "path": "/api/v1/agent/chat", "status": 200, "latency": 0.3018754, "client_ip": "::1", "user_agent": "Apifox/1.0.0 (https://apifox.com)"}
+2026-03-24T20:00:04.576+0800	INFO	server/main.go:73	开始优雅关闭HTTP服务
+2026-03-24T20:00:04.576+0800	INFO	server/main.go:77	HTTP服务已成功关闭
+2026-03-24T20:00:16.146+0800	INFO	redis/redis.go:25	Redis 连接成功
+2026-03-24T20:00:16.157+0800	INFO	ai/client.go:49	AI客户端初始化成功	{"model": "qwen-turbo"}
+2026-03-24T20:00:16.157+0800	INFO	server/main.go:52	HTTP服务启动中	{"addr": "0.0.0.0:8080"}
+2026-03-24T20:00:24.039+0800	INFO	handler/agent.go:37	接收Agent对话请求	{"session_id": "25", "user_input": "我叫MJ"}
+2026-03-24T20:00:24.757+0800	INFO	handler/agent.go:88	Agent对话接口响应成功	{"session_id": "25"}
+2026-03-24T20:00:24.757+0800	INFO	middleware/log.go:22	HTTP 请求日志	{"method": "POST", "path": "/api/v1/agent/chat", "status": 200, "latency": 0.7182122, "client_ip": "::1", "user_agent": "Apifox/1.0.0 (https://apifox.com)"}
+2026-03-24T20:00:30.798+0800	INFO	handler/agent.go:37	接收Agent对话请求	{"session_id": "25", "user_input": "我叫什么"}
+2026-03-24T20:00:31.100+0800	INFO	handler/agent.go:88	Agent对话接口响应成功	{"session_id": "25"}
+2026-03-24T20:00:31.100+0800	INFO	middleware/log.go:22	HTTP 请求日志	{"method": "POST", "path": "/api/v1/agent/chat", "status": 200, "latency": 0.3019824, "client_ip": "::1", "user_agent": "Apifox/1.0.0 (https://apifox.com)"}

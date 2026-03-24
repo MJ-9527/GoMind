@@ -46,14 +46,21 @@ func AgentChatHandler(c *gin.Context) {
 			Role:    openai.ChatMessageRoleSystem,
 			Content: "你是一个专业的Go开发助手Agent，回答简洁、准确、实用，只讲干货。",
 		},
-		// 用户输入
-		{
-			Role:    openai.ChatMessageRoleUser,
-			Content: req.UserInput,
-		},
 	}
 
-	// 4. 调用AI客户端
+	// 4. 加载历史会话并拼接本次用户输入
+	history := ai.GetMessages(req.SessionID)
+	if len(history) > 0 {
+		messages = append(messages, history...)
+	}
+
+	currentUserMsg := openai.ChatCompletionMessage{
+		Role:    openai.ChatMessageRoleUser,
+		Content: req.UserInput,
+	}
+	messages = append(messages, currentUserMsg)
+
+	// 5. 调用AI客户端
 	respContent, err := ai.GlobalAIClient.Chat(context.Background(), messages)
 	if err != nil {
 		logger.Error("Agent对话接口调用AI失败",
@@ -64,13 +71,20 @@ func AgentChatHandler(c *gin.Context) {
 		return
 	}
 
-	// 5. 构造响应数据
+	// 6. 保存本轮对话到会话（供后续请求读取）
+	ai.SaveMessage(req.SessionID, currentUserMsg)
+	ai.SaveMessage(req.SessionID, openai.ChatCompletionMessage{
+		Role:    openai.ChatMessageRoleAssistant,
+		Content: respContent,
+	})
+
+	// 7. 构造响应数据
 	respData := map[string]interface{}{
 		"session_id": req.SessionID,
 		"reply":      respContent,
 	}
 
-	// 6. 返回成功响应
+	// 8. 返回成功响应
 	logger.Info("Agent对话接口响应成功", zap.String("session_id", req.SessionID))
 	Success(c, respData)
 }
