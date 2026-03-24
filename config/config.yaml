@@ -19,9 +19,9 @@ ai:
 
 # redis数据库配置
 redis:
-  addr: "localhost:6379"
-  password: ""
-  db: 0
+   addr: "localhost:6379"
+   password: ""
+   db: 0
 
 rate_limit:
-  max_requests: 10 #每秒最多10次请求
+   max_requests: 10 #每秒最多10次请求

@@ -369,3 +369,15 @@
 2026-03-19T19:54:19.101+0800	INFO	middleware/log.go:22	HTTP 请求日志	{"method": "GET", "path": "/favicon.ico", "status": 404, "latency": 0, "client_ip": "::1", "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"}
 2026-03-19T21:02:18.432+0800	INFO	server/main.go:67	开始优雅关闭HTTP服务
 2026-03-19T21:02:18.433+0800	INFO	server/main.go:71	HTTP服务已成功关闭
+2026-03-23T19:25:20.472+0800	INFO	ai/client.go:49	AI客户端初始化成功	{"model": "qwen-turbo"}
+2026-03-23T19:25:20.480+0800	INFO	server/main.go:46	HTTP服务启动中	{"addr": "0.0.0.0:8080"}
+2026-03-23T19:25:29.586+0800	INFO	server/main.go:67	开始优雅关闭HTTP服务
+2026-03-23T19:25:29.586+0800	INFO	server/main.go:71	HTTP服务已成功关闭
+2026-03-23T19:30:51.815+0800	INFO	ai/client.go:49	AI客户端初始化成功	{"model": "qwen-turbo"}
+2026-03-23T19:30:51.834+0800	INFO	server/main.go:46	HTTP服务启动中	{"addr": "0.0.0.0:8080"}
+2026-03-23T19:31:32.476+0800	INFO	handler/agent.go:37	接收Agent对话请求	{"session_id": "25", "user_input": "我现在在做一个GoMind的项目，主要用golnag,gin,agent，你有什么建议吗"}
+2026-03-23T19:31:40.454+0800	INFO	handler/agent.go:74	Agent对话接口响应成功	{"session_id": "25"}
+2026-03-23T19:31:40.454+0800	INFO	middleware/log.go:22	HTTP 请求日志	{"method": "POST", "path": "/api/v1/agent/chat", "status": 200, "latency": 7.9787561, "client_ip": "::1", "user_agent": "Apifox/1.0.0 (https://apifox.com)"}
+2026-03-23T19:31:46.373+0800	INFO	handler/agent.go:37	接收Agent对话请求	{"session_id": "25", "user_input": "你好"}
+2026-03-23T19:31:46.817+0800	INFO	handler/agent.go:74	Agent对话接口响应成功	{"session_id": "25"}
+2026-03-23T19:31:46.818+0800	INFO	middleware/log.go:22	HTTP 请求日志	{"method": "POST", "path": "/api/v1/agent/chat", "status": 200, "latency": 0.4459321, "client_ip": "::1", "user_agent": "Apifox/1.0.0 (https://apifox.com)"}
